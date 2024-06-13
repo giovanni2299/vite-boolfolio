@@ -20,7 +20,8 @@ export default {
   </p>
   <nav>
     <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/about">Go to About</RouterLink>
+    <RouterLink to="/portfolio">Go to Portfolio</RouterLink>
+    <RouterLink to="/contact">Go to contact</RouterLink>
   </nav>
   <main>
     <RouterView />

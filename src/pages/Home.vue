@@ -1,6 +1,7 @@
 <template>
     <div>
-        ciao
+        <h1>Questa è la Home</h1>
+        <p>questo è il paragrafo della home </p>
     </div>
 </template>
 

@@ -1,23 +1,20 @@
 import { createApp } from 'vue'
+import { createMemoryHistory, createRouter } from 'vue-router'
+import './style.css'
 import App from './App.vue'
-import { createWebHistory, createRouter } from 'vue-router'
-
-
-import HomeView from './pages/HomeView.vue'
-import PortfolioView from './pages/PortfolioView.vue'
-import ContactView from './pages/ContactView.vue'
-
-
-
-const routes = [
-  { path: '/', name:'home', component: HomeView},
-  { path: '/portfolio', name:'portfolio', component: PortfolioView },
-  {path: '/contact', name:'contact', component: ContactView}
-]
+import Contact from './pages/Contact.vue'
+import Home from './pages/Home.vue'
+import Portfolio from './pages/Portfolio.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes: routes
+    history: createMemoryHistory(),
+    routes: [
+        { path: '/', component: Home },
+        { path: '/portfolio', component: Portfolio },
+        { path: '/contact', component: Contact },
+
+    ]
 })
 
-createApp(App).use(routes).mount('#app')
+
+createApp(App).use(router).mount('#app')

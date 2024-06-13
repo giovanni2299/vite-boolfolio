@@ -19,9 +19,18 @@ export default {
     <strong>Current route path:</strong> {{ $route.fullPath }}
   </p>
   <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/portfolio">Go to Portfolio</RouterLink>
-    <RouterLink to="/contact">Go to contact</RouterLink>
+    <div>
+      <RouterLink to="/">Go to Home</RouterLink>
+
+    </div>
+    <div>
+
+      <RouterLink to="/portfolio">Go to Portfolio</RouterLink>
+    </div>
+    <div>
+      <RouterLink to="/contact">Go to contact</RouterLink>
+
+    </div>
   </nav>
   <main>
     <RouterView />
